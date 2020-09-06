@@ -32,7 +32,7 @@ func TestStringsReader(t *testing.T) {
 	i := reader.Size() - int64(reader.Len())
 	// 当前计数器
 	t.Log(i)
-	// 这里返回的是
+	// 这里返回的是copy函数的结果
 	at, err := reader.ReadAt([]byte("go123"), 3)
 	t.Log(at)
 	t.Log(reader.Size())
