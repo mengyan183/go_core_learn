@@ -35,3 +35,8 @@ func TestFile(t *testing.T) {
 }
 
 //TODO : 创建并操作一个系统进程
+func TestProcess(t *testing.T) {
+	process, err := os.FindProcess(1535)
+	t.Log(process,err)
+	//os.StartProcess()
+}
